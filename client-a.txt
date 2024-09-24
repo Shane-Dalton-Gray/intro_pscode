@@ -2,3 +2,31 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+START
+
+1. Generate a random number between 1 and 10.
+   SET randomNumber = RANDOM(1, 10)
+
+2. SET attempts = 3
+
+3. WHILE attempts > 0
+   a. Prompt player to enter a guess.
+      INPUT playerGuess
+      
+   b. IF playerGuess equals randomNumber THEN
+        OUTPUT "Congratulations! You guessed the correct number."
+        BREAK (exit the loop)
+      
+   c. ELSE
+        IF playerGuess is greater than randomNumber THEN
+           OUTPUT "Your guess is too high."
+        ELSE
+           OUTPUT "Your guess is too low."
+   
+   d. Subtract 1 from attempts
+      SET attempts = attempts - 1
+
+4. IF attempts equals 0 THEN
+      OUTPUT "Sorry, you've run out of attempts. The correct number was " + randomNumber
+
+END

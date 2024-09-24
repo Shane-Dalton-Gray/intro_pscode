@@ -2,3 +2,15 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+START
+
+1. Initialize counter for product packages.
+   SET packageCount = 2
+
+2. WHILE packageCount <= 50
+   a. OUTPUT packageCount
+
+   b. Increase packageCount by 2
+      SET packageCount = packageCount + 2
+
+END

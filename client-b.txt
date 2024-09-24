@@ -2,3 +2,40 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+START
+
+1. Initialize starting position of the customer.
+   SET customerX = 0
+   SET customerY = 0
+
+2. Define the target location in the warehouse.
+   SET targetX = [target X-coordinate]
+   SET targetY = [target Y-coordinate]
+
+3. WHILE customerX != targetX OR customerY != targetY
+   a. OUTPUT "You are currently at (" + customerX + ", " + customerY + ")"
+   b. OUTPUT "Enter direction (north, south, east, or west):"
+      INPUT direction
+
+   c. IF direction equals "north" THEN
+         Increase customerY by 1
+         SET customerY = customerY + 1
+         
+      ELSE IF direction equals "south" THEN
+         Decrease customerY by 1
+         SET customerY = customerY - 1
+         
+      ELSE IF direction equals "east" THEN
+         Increase customerX by 1
+         SET customerX = customerX + 1
+         
+      ELSE IF direction equals "west" THEN
+         Decrease customerX by 1
+         SET customerX = customerX - 1
+         
+      ELSE
+         OUTPUT "Invalid direction. Please enter north, south, east, or west."
+
+4. OUTPUT "Congratulations! You have reached the target location at (" + targetX + ", " + targetY + ")."
+
+END
